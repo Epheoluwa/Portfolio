@@ -259,6 +259,10 @@ background-color: rgba(14, 18, 22, 0.93);
     line-height: 22px;
     margin-right: 20px;
 }
+.skill-p{
+	color: rgb(233, 227, 227);
+	margin-bottom: 1px;
+}
 .lined{
     color:  rgb(233, 227, 227);
 }
@@ -278,7 +282,7 @@ li{
 }
 .project-tool{
 	color:  rgb(233, 227, 227);
-	margin-left: 15px;
+	margin-left: 60px;
 }
 @media (max-width: 576px) {
 	.project-Description{
