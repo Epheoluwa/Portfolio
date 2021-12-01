@@ -182,6 +182,9 @@ section {
   text-decoration: none;
 }
 
+.social-link-github {
+  background: #0101026e;
+}
 .social-link-facebook {
   background: #4460ae;
 }
