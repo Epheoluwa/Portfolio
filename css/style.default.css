@@ -1991,6 +1991,15 @@ code {
 }
 }
 
+@media (max-width: 576px) {
+ 
+  h1, .h1 {
+    font-size: 2.6rem !important;
+}
+.lead {
+  font-size: 1.15rem !important;
+}
+}
 /*
 * 10. DROPDOWNS
 */
