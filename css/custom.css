@@ -287,6 +287,12 @@ li{
 .i-frame{
 	margin-top: 20px;
 }
+.self_imgStyle{
+	height: 70% !important;
+}
+.pb-butom{
+	padding-bottom: 1rem !important;
+}
 @media (max-width: 576px) {
 	.project-Description{
 		margin-left: 18px;
@@ -296,6 +302,9 @@ li{
 	}
 	.contact-p{
 		font-size: 20px !important;
+	}
+	.mobilePadLeft{
+		margin-left: 18px !important;
 	}
 }
 a{
