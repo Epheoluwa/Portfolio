@@ -1880,8 +1880,8 @@ code {
 * 9. CARD
 */
 .card {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #495057;
+  border: 1px solid #495057;
   border-radius: 0.25rem;
 }
 
