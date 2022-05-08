@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animation.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
   </head>
@@ -62,31 +63,7 @@
               <!-- <br> <br> Solomon has got strong problem solving abilities, creativity, uniqueness and most necessary technical skills.
               He is an excellent communicator, fast learner, time manager and quick in grasping a bigger picture.  -->
               <br>
-            </p>
-            <button type="button" id="GetFile">Download</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
-$('#GetFile').on('click', function () {
-    $.ajax({
-        url : 'https://github.com/Epheoluwa/Portfolio/blob/master/img/SUNMOLA%20SOLOMON%201.pdf',
-        // url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/172905/test.pdf',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'myfile.pdf';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    });
-});
-</script> 
+            </p> 
             <p class="skill-p text-uppercase mobilePadLeft">Technical skills:</p>
 
             <div class="row pt-3">
@@ -154,7 +131,12 @@ $('#GetFile').on('click', function () {
               </div>
             </div>
           </div>
-          <div class="col-lg-6"><img src="img/self2.jpg" alt="..." class="img-fluid self_imgStyle"></div>
+          <div class="col-lg-6">
+            <div class="stage">
+              
+              <img src="img/self2.jpg" alt="..." class="img-fluid self_imgStyle box bounce-1"></div>
+          </div>
+            
         </div>
        
       </div>
@@ -163,8 +145,6 @@ $('#GetFile').on('click', function () {
     <section id="project" class="pb-0 pt-1">
       <header class="text-center mb-1">
         <h2 class="lined text-uppercase mb-5">Projects</h2>
-        <p class="About-p">Few of the Projects I have Worked On
-        </p>
       </header>        
       <div class="row p-0">  
         <div class="col-lg-6 col-md-4 col-12 p-0 project-All"><a href="img/wrk.PNG" data-lightbox="image-1" data-title="Question and Anwer Forum" class="d-block"><img src="img/wrk.PNG" alt="..." class="img-fluid d-block mx-auto"></a>
