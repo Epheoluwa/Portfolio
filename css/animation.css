@@ -1,6 +1,6 @@
 .stage {
     display: flex;
-    height: 70%;
+    height: 100%;
     width: 100%;
 }
 .box {
@@ -16,7 +16,7 @@
     animation-timing-function: linear;
 }
 @keyframes bounce-1 {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-100px); }
-    100% { transform: translateY(0); }
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-100px); }
+    100% { transform: translateX(0); }
 }

@@ -1,7 +1,7 @@
 /* your styles go here */
 
 body {
-background-color: rgba(14, 18, 22, 0.93);
+background-color: var(--gray-dark);
 }
 /* cyrillic-ext */
 @font-face {
@@ -254,21 +254,95 @@ background-color: rgba(14, 18, 22, 0.93);
 .lead{
     color: #8892b0;
 }
+.hiFront3443{
+	font-weight: 700;
+	color: #64ffda;
+	line-height: 1.1;
+	font-size: 25px;
+}
+.wo56677{
+	color: #8892b0;
+	font-size: 20px;
+	width: 50%;
+}
+.list-inline-item678999{
+	padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.list-inline-item678999455::after{
+	content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #8892b0;
+}
+.fixedicons7785{
+	width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+}
+.namestyling54464{
+	color: rgb(233, 227, 227);
+	font-size: 45px;
+	font-weight: 700;
+}
+.builfd454545{
+	color: #8892b0 !important;
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 0.9;
+}
+.aboutheader{
+	position: relative;
+}
+.About_h2{
+	color: rgb(233, 227, 227);	
+}
+.About_h2::after{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 240px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #8892b0;
+}
 .About-p{
-    color: rgb(233, 227, 227);
+    color: #8892b0;
     line-height: 22px;
-    margin-right: 20px;
+	font-size: 18px;
+}
+.greenCloring{
+	color: #64ffda;
 }
 .skill-p{
-	color: rgb(233, 227, 227);
+	color: #8892b0;
 	margin-bottom: 1px;
+	font-size: 18px;
 }
 .lined{
     color:  rgb(233, 227, 227);
 }
 
 li{
-    color:  rgb(233, 227, 227);
+    color:  #8892b0;
+}
+.skillsLi::marker{
+	content: "▹" !important;
+    color: #64ffda;
+}
+.skillsLi{
+	padding: 0.1rem 0.2rem;
+}
+.skillUL{
+	margin-left: -2rem;
 }
 .About-edu{
     color:rgb(233, 227, 227);
@@ -288,10 +362,31 @@ li{
 	margin-top: 20px;
 }
 .self_imgStyle{
-	height: 90% !important;
+	height: 70% !important;
+	border: 5px solid #64ffda;
+	border-radius: 5px;
+	
 }
 .pb-butom{
 	padding-bottom: 1rem !important;
+}
+
+/* .imgwrapp8978{
+	bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+	background-color: #64ffda;
+} */
+.imgwrapp8978{
+	
+	
 }
 @media (max-width: 576px) {
 	.project-Description{
