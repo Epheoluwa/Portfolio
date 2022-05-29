@@ -370,6 +370,9 @@ li{
 .pb-butom{
 	padding-bottom: 1rem !important;
 }
+.ml10rem{
+	margin-left: 8rem;
+}
 
 /* .imgwrapp8978{
 	bottom: 0;
@@ -384,9 +387,22 @@ li{
     width: 100%;
 	background-color: #64ffda;
 } */
-.imgwrapp8978{
-	
-	
+.relpostion{
+	position: relative;
+}
+.Exp_h2{
+	color: rgb(233, 227, 227);
+}
+.Exp_h2::after{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 240px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #8892b0;
 }
 @media (max-width: 576px) {
 	.project-Description{

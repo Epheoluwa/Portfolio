@@ -1,29 +1,86 @@
-// ------------------------------------------------------ //
-// For demo purposes, can be deleted
-// ------------------------------------------------------ //
+$(()=>{
+    //showing and hiding experience based on click
 
-var stylesheet = $('link#theme-stylesheet');
-$("<link id='new-stylesheet' rel='stylesheet'>").insertAfter(stylesheet);
-var alternateColour = $('link#new-stylesheet');
+    $(document).on("click", "#expbtn1", function(){
+        $("#expx1").show();
+        $("#expbtn1").addClass("active78u");
 
-if ($.cookie("theme_csspath")) {
-    alternateColour.attr("href", $.cookie("theme_csspath"));
-}
+        $("#expx2").hide();
+        $("#expbtn2").removeClass("active78u");
 
-$("#colour").change(function () {
+        $("#expx3").hide();
+        $("#expbtn3").removeClass("active78u");
 
-    if ($(this).val() !== '') {
+        $("#expx4").hide();
+        $("#expbtn4").removeClass("active78u");
 
-        var theme_csspath = 'css/style.' + $(this).val() + '.css';
+        $("#expx5").hide();
+        $("#expbtn5").removeClass("active78u");
+    })
 
-        alternateColour.attr("href", theme_csspath);
+    $(document).on("click", "#expbtn2", function(){
+        $("#expx1").hide();
+        $("#expbtn1").removeClass("active78u");
 
-        $.cookie("theme_csspath", theme_csspath, {
-            expires: 365,
-            path: document.URL.substr(0, document.URL.lastIndexOf('/'))
-        });
+        $("#expx2").show();
+        $("#expbtn2").addClass("active78u");
 
-    }
+        $("#expx3").hide();
+        $("#expbtn3").removeClass("active78u");
 
-    return false;
-});
+        $("#expx4").hide();
+        $("#expbtn4").removeClass("active78u");
+
+        $("#expx5").hide();
+        $("#expbtn5").removeClass("active78u");
+    })
+    $(document).on("click", "#expbtn3", function(){
+        $("#expx1").hide();
+        $("#expbtn1").removeClass("active78u");
+
+        $("#expx2").hide();
+        $("#expbtn2").removeClass("active78u");
+
+        $("#expx3").show();
+        $("#expbtn3").addClass("active78u");
+
+        $("#expx4").hide();
+        $("#expbtn4").removeClass("active78u");
+
+        $("#expx5").hide();
+        $("#expbtn5").removeClass("active78u");
+    })
+    $(document).on("click", "#expbtn4", function(){
+        $("#expx1").hide();
+        $("#expbtn1").removeClass("active78u");
+
+        $("#expx2").hide();
+        $("#expbtn2").removeClass("active78u");
+
+        $("#expx3").hide();
+        $("#expbtn3").removeClass("active78u");
+
+        $("#expx4").show();
+        $("#expbtn4").addClass("active78u");
+
+        $("#expx5").hide();
+        $("#expbtn5").removeClass("active78u");
+    })
+    $(document).on("click", "#expbtn5", function(){
+        $("#expx1").hide();
+        $("#expbtn1").removeClass("active78u");
+
+        $("#expx2").hide();
+        $("#expbtn2").removeClass("active78u");
+
+        $("#expx3").hide();
+        $("#expbtn3").removeClass("active78u");
+
+        $("#expx4").hide();
+        $("#expbtn4").removeClass("active78u");
+
+        $("#expx5").show();
+        $("#expbtn5").addClass("active78u");
+    })
+
+})
